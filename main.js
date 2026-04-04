@@ -10,9 +10,9 @@ console.log(sum, dif)
 
 let title = "";
 if (title === "") {
-    console.log("Название задач не указано");
+  console.log("Название задач не указано");
 } else {
-    console.log("Задача:", title)
+  console.log("Задача:", title)
 }
 
 let tasks = 5;
@@ -23,3 +23,19 @@ if (tasks === 0) {
 } else {
   console.log("Много задач");
 }
+function sum(a, b) {
+  return a + b;
+}
+console.log(sum(3, 4)); //7
+console.log(sum(10, 5)); //15
+function isTaskDone(status) {
+  return status === "выполнена";
+}
+console.log(isTaskDone("выполнена")); //true
+console.log(isTaskDone("активна")); //false
+function taskSummary(total, done) {
+  let active = total - done;
+  return "Всего: " + total + " | Выполнено: " + done + " | Активных: " + active;
+}
+console.log(taskSummary(5,3));
+console.log(taskSummary(10,4));
