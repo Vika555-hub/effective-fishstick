@@ -39,3 +39,14 @@ function taskSummary(total, done) {
 }
 console.log(taskSummary(5,3));
 console.log(taskSummary(10,4));
+
+let amount = сумма покупок;
+if (amount === 0) {
+  console.log("Корзина пуста");
+} else if (amount <1000) {
+  console.log("Скидка не принимается");
+} else if (amount >= 1000 && amount <= 5000) {
+  console.log("Скидка 5%");
+} if (amount >= 5000) {
+  console.log(Скидка 10%);
+}
