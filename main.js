@@ -15,10 +15,10 @@ if (title === "") {
   console.log("Задача:", title)
 }
 
-let tasks = 5;
-if (tasks === 0) {
+let taskss = 5;
+if (taskss === 0) {
   console.log("Список пуст");
-} else if (tasks <= 3) {
+} else if (taskss <= 3) {
   console.log("Немного задач");
 } else {
   console.log("Много задач");
@@ -50,3 +50,40 @@ if (amount === 0) {
 } else if (amount >= 5000) {
   console.log("Скидка 10%");
 }
+
+let cities = ["Москва", "Париж", "Берлин", "Токио"];
+cities[2] = "Лондон";
+console.log(cities);
+// ["Москва", "Париж", "Лондон", "Токио"]
+
+let task = {
+  id: 1,
+  title: "Купить молоко",
+  status: "активна"
+};
+console.log(task.id);     // 1
+console.log(task.title);  // "Купить молоко"
+console.log(task.status); // "активна"
+
+let tasks = [
+  { id: 1, title: "Купить молоко", status: "активна" },
+  { id: 2, title: "Позвонить врачу", status: "выполнена" },
+  { id: 3, title: "Сделать уроки", status: "активна" }
+];
+console.log(tasks[0].title);  // "Купить молоко"
+console.log(tasks[1].status); // "выполнена"
+
+tasks[0].status = "выполнена";
+console.log(tasks[0]); 
+// { id: 1, title: "Купить молоко", status: "выполнена" }
+
+tasks.push({ id: 4, title: "Прогулка", status: "активна" });
+console.log(tasks);
+
+let user = {
+  name: "Вика",
+  tasks: tasks
+};
+
+console.log(user.name);         // "Вика"
+console.log(user.tasks.length); // 4
