@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskLite — To Do</title>
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body class="todo">
@@ -29,16 +29,18 @@
             <button type="sudmit" class="form-add__btn">Добавить</button>
         </form>
         <div class="toolbar">
-            <input type="text" class="toolbar__search" placeholder="Поиск...">
-            <div class="toolbar__tabs tabs">
-                <button class="tabs__btn">Все</button>
-                <button class="tabs__btn">Активные</button>
-                <button class="tabs__btn">Завершенные</button>
+            <div class="toolbar__panel">
+                <input type="text" class="toolbar__search" placeholder="Поиск...">
+                <div class="toolbar__tabs tabs">
+                    <button class="tabs__btn">Все</button>
+                    <button class="tabs__btn">Активные</button>
+                    <button class="tabs__btn">Завершенные</button>
+                </div>
+                <select class="toolbar__sort">
+                    <option value="1">Сначала новые</option>
+                    <option value="2">Сначала старые</option>
+                </select>
             </div>
-            <select class="toolbar__sort">
-                <option value="1">Сначала новые</option>
-                <option value="2">Сначала старые</option>
-            </select>
             <div class="task">
                 <div class="task__content">
                     <div class="task__title">Пример задачи</div>
@@ -74,7 +76,7 @@
                     Очистить выполненные
                 </button>
             </div>
-            
+
 
         </div>
     </main>
